@@ -1,0 +1,22 @@
+<h1>Módulo de atualização de clientes.</h1>
+
+{{#each clients}}
+
+<form  action='/update_data/{{dataValues.id}}' method="POST">
+<div>
+    <label for="name">Nome atual: {{dataValues.name}}</label><br>
+    <input type="text"  name="name" placeholder="Digite o nome."><br>
+    <label for="email">E-mail atual: {{dataValues.email}}</label><br>
+    <input type="text" name="email" placeholder="Digite o em-mail."><br><br>
+    <label for="phone">Telefone atual: {{dataValues.phone}}</label><br>
+    <input type="text" name="phone" placeholder="Digite o telefone."><br><br>
+    <label for="gender">Gênero: {{dataValues.gender}}</label><br>
+    <input type="text" name="gender" placeholder="Digite o gênero."><br><br>
+    <a href="/update_data/{{dataValues.id}}"><button>Atualizar este cliente.</button></a>
+    <input type="reset">
+</div>
+<hr>
+<br>
+</form>
+
+{{/each}}

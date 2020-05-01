@@ -1,0 +1,13 @@
+<h1>Módulo de busca de clientes.</h1>
+
+{{#each clients}}
+
+<p>ID Cliente: {{dataValues.id}}</h1>
+<p>Nome: {{dataValues.name}}</p>
+<p>E-mail: {{dataValues.email}}</p>
+<p>Telefone: {{dataValues.phone}}</p>
+<p>Sexo: {{dataValues.gender}}</p>
+<a href="/client_delete/{{dataValues.id}}"><button>Deletar</button></a>
+<hr>
+
+{{/each}}

@@ -1,0 +1,29 @@
+<h1>Módulo de busca de clientes.</h1>
+<hr>
+<form action="/advanced_search" method="GET">
+    <label for="keyId">Procurar por Id:</label><br>
+    <input type="text"  name="keyId" placeholder="Digite seu nome."><br>
+    <label for="keyName">Procurar por Nome:</label><br>
+    <input type="text"  name="keyName" placeholder="Digite seu nome."><br>
+    <label for="keyEmail">Procurar por E-mail:</label><br>
+    <input type="text" name="keyEmail" placeholder="Digite seu em-mail."><br>
+    <label for="keyPhone">Procurar por Telefone:</label><br>
+    <input type="text" name="keyPhone" placeholder="Digite seu telefone."><br>
+    <label for="keyGender">Procurar por Gênero:</label><br>
+    <input type="text"  name="keyGender" placeholder="Digite seu nome."><br> 
+    <input type="submit" value="Procurar">
+    <input type="reset">
+</form>
+<hr>
+<br>
+
+{{#each clients}}
+
+<p>ID Cliente: {{dataValues.id}}</h1>
+<p>Nome: {{dataValues.name}}</p>
+<p>E-mail: {{dataValues.email}}</p>
+<p>Telefone: {{dataValues.phone}}</p>
+<p>Sexo: {{dataValues.gender}}</p>
+<hr>
+
+{{/each}}

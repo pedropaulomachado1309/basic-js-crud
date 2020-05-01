@@ -1,0 +1,4 @@
+{
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.mode.statusBar.alignment": "left"
+}
